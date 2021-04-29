@@ -1,0 +1,202 @@
+html{
+    background:url('bg3.jpg') repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+.bot{
+    width: 100px;
+    height: 175px;
+    position: relative;
+    margin-top: 30px; 
+    margin-left: 100px; 
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+#text1{
+    letter-spacing: 8px;
+    text-align: center;
+}
+#text2{
+    text-align: center;
+    letter-spacing: 2px;
+    color:rgb(245, 71, 178);
+    opacity: 0.3;
+}
+#footer{
+    position: absolute;
+    letter-spacing:2px;
+    bottom: 10px;
+    right: 10px;
+}
+.name{
+    color:rgb(250, 56, 218);
+    opacity: 0.5; 
+}
+.face{
+    width: 90px;
+    height: 90px;
+    background-color: #dde1ef;
+    border-radius: 50%;
+    position: relative;  
+    left: 5px;
+}
+
+.antenna1{
+    width:5px;
+    height: 50px;
+    background-color: #dde1ef;
+    position: relative;
+    top:50px;
+    left:40px;
+    transform-origin: bottom;
+    transform: rotate(-20deg);
+}
+
+.antenna2{
+    width:5px;
+    height: 50px;
+    background-color: #dde1ef;
+    position: relative;
+    top:20px;
+    left:8px;
+    transform-origin: bottom;
+    transform: rotate(-45deg);
+}
+
+.eye{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:rgb(38, 23, 105);
+    position: relative;
+    top: 30px;
+    left: 70px;
+}
+
+.body{
+    width: 100px;
+    height: 150px;
+    background-color: #dde1ef;
+    position: relative;
+    border-radius: 50% 50% 50% 50% / 73% 73% 40% 40%;  
+}
+
+.hand{
+    width: 40px;
+    height: 80px;
+    background-color:#dde1ef;
+    border-radius:100% 100% 200%;
+    position: relative;
+    top: 25px;
+    left: 30px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+    transform-origin: top;
+    animation: run1 0.5s linear infinite;
+}
+.foot1{
+    width: 20px;
+    height: 50px;
+    background-color: #dde1ef;
+    border-radius: 0 0 30% 30%;
+    position: relative; 
+    bottom:5px;
+    left:40px;
+    transform-origin: top;
+    animation: run1 0.5s linear infinite;
+}
+@keyframes run1{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg)
+    }
+    50%{
+        transform: rotate(0deg)
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    }
+
+.foot2{
+    width: 20px;
+    height: 50px;
+    background-color: #dde1ef;
+    border-radius: 0 0 30% 30%;
+    position: relative; 
+    bottom:58px;
+    left:50px;
+    transform-origin: top;
+    animation: run2 0.5s linear infinite;
+}
+@keyframes run2{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg)
+    }
+    50%{
+        transform: rotate(0deg)
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.animate {
+animation: jump 240ms ease 0s infinite alternate both;
+}
+@keyframes jump {
+    0%{
+        bottom: 0;
+    }
+    100% {
+        bottom: 80px;
+    }
+}
+
+#block{
+    display: block;
+    height:30px;
+    width:30px;
+    background-color: red;
+    box-shadow: 0px 0px 15px red;
+    position: relative;
+    top: 175px;
+    left:1000px;
+    animation: slide 2.3s infinite;
+}
+@keyframes slide{
+    0%{left: 1000px;}
+    100%{left: -50px;}
+}
+
+#scr-parent{
+    color:#ffff;
+    border: 2px solid white;
+    border-radius: 13px;
+    width: 14%;
+    height: 3%;
+    padding: 15px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    position: absolute;
+    left: 60%;
+    top: 21%;
+}
+
+
+
